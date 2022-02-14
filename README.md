@@ -13,14 +13,22 @@ This script executes 2 actions:
 
 ## Usage:
 
-Set environment variables:
+Install the dependencies
+```shell
+python3 -m pip install -r requirements.txt
+```
 
-- Set IG_USERNAME to username account you want to monitor. Example: ladygaga
-- Set WEBHOOK_URL to Discord account webhook url. To know how, just Google: "how to create webhook discord".
-- Set TIME_INTERVAL to the time in seconds in between each check for a new post. Example: 1.5, 600 (default=600 = 10 minutes)
+Copy over the config.example.yml
+```shell
+cp config.example.yml config.yml
+```
+Fill out config.yml
 
-How to setup enviroment variables: 
-https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-set-environment-variables-in-linux/
+Run the script
+```shell
+python3 main.py
+```
+
 
 ## Collaborations:
 
